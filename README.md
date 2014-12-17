@@ -21,3 +21,7 @@ SheetsDb will be an open source C# Client for Google Sheets database like manipu
 * Validations
   * Custom Sheets Models Validations
 *  Relations
+*  
+
+
+Google APIs Client Library for .NET - https://developers.google.com/api-client-library/dotnet/get_started
