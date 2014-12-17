@@ -24,5 +24,5 @@ SheetsDb will be an open source C# Client for Google Sheets database like manipu
 
 ## Resources
 
-Google APIs Client Library for .NET - https://developers.google.com/api-client-library/dotnet/get_started
-Accessing Google Spreadsheets with C# using Google Data API - http://stackoverflow.com/questions/725627/accessing-google-spreadsheets-with-c-sharp-using-google-data-api
+* Google APIs Client Library for .NET - https://developers.google.com/api-client-library/dotnet/get_started
+* Accessing Google Spreadsheets with C# using Google Data API - http://stackoverflow.com/questions/725627/accessing-google-spreadsheets-with-c-sharp-using-google-data-api
