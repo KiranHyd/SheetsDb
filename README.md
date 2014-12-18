@@ -7,7 +7,7 @@ SheetsDb will be an open source C# Client for Google Sheets database like manipu
 
 ## TODO
 
-* Authentication with google docs [x]
+- [x] Authentication with google docs
 * Sheets DDL
   * Create sheet
   * Delete sheet
