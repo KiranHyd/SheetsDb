@@ -1,4 +1,5 @@
 ﻿using DoMaven.SheetsDb;
+using DoMaven.SheetsDb.Managers;
 using DoMaven.SheetsDb.Security;
 using System;
 using System.Collections.Generic;
@@ -38,15 +39,10 @@ namespace ConsoleApplication1
             // Stops Receving Keys Once Enter is Pressed
             while (key.Key != ConsoleKey.Enter);
 
-            var authManager = new AuthenticationManager("testApp", new GoogleAuthentication(username, password));
+            var sheetsManager = new SheetsManager("SheetsDb-Test", new GoogleAuthentication(username, password));
 
 
-            Console.WriteLine("Your spreadsheets:");
-            foreach (var entry in authManager.GetSheets())
-            {
-                Console.WriteLine(entry.Title.Text);
-            }
-            Console.ReadKey();
+            sheetsManager.Test();
         }
     }
 }

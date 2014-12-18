@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheetsDb", "SheetsDb\SheetsDb.csproj", "{EACA4F8E-3911-46E8-9F87-CEBDEF23C7F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{66C636BF-4F04-4666-A85F-EFA8D7C1BEA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "ConsoleApplication1\Console.csproj", "{66C636BF-4F04-4666-A85F-EFA8D7C1BEA9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7BE7CF2A-8488-4C78-8957-DA270DCFCAAF}"
 	ProjectSection(SolutionItems) = preProject

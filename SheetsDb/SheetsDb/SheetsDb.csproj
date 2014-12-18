@@ -36,7 +36,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Security\AuthenticationManager.cs" />
+    <Compile Include="Managers\ISheetsManager.cs" />
+    <Compile Include="Managers\SheetsManager.cs" />
     <Compile Include="Security\GoogleAuthentication.cs" />
     <Compile Include="Security\IAuthentication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
