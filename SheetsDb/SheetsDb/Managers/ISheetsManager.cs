@@ -1,4 +1,5 @@
-﻿using Google.GData.Client;
+﻿using DoMaven.SheetsDb.Models;
+using Google.GData.Client;
 using Google.GData.Spreadsheets;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,6 @@ namespace DoMaven.SheetsDb.Managers
         void Authenticate();
         bool Authenticated { get; }
         void Test();
-        SpreadsheetEntry GetDatabase();
+        Sheet GetDatabase(bool loadWorksheets = false);
     }
 }

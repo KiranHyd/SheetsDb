@@ -38,6 +38,8 @@
   <ItemGroup>
     <Compile Include="Managers\ISheetsManager.cs" />
     <Compile Include="Managers\SheetsManager.cs" />
+    <Compile Include="Models\Sheet.cs" />
+    <Compile Include="Models\WorkSheet.cs" />
     <Compile Include="Security\GoogleAuthentication.cs" />
     <Compile Include="Security\IAuthentication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

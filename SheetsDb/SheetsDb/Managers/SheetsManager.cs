@@ -1,4 +1,5 @@
-﻿using DoMaven.SheetsDb.Security;
+﻿using DoMaven.SheetsDb.Models;
+using DoMaven.SheetsDb.Security;
 using Google.GData.Client;
 using Google.GData.Spreadsheets;
 using System;
@@ -39,19 +40,39 @@ namespace DoMaven.SheetsDb.Managers
             _authenticated = true;
         }
 
-        public SpreadsheetEntry GetDatabase()
+        public Sheet GetDatabase(bool loadWorksheets = false)
         {
             var query = new SpreadsheetQuery();
             query.Title = appName;
 
             var feed = service.Query(query);
-
             var entry = (SpreadsheetEntry)feed.Entries.FirstOrDefault();
 
-            entry.Worksheets.CreateFeedEntry();
+            var sheet = new Sheet();
+            sheet.Name = entry.Title.Text;
 
-            return entry;
+           // Load worksheets into the sheet
+            if (loadWorksheets) {
+                var worksheets = new List<WorkSheet>();
+
+                entry.Worksheets.Entries.ToList().All(e => {
+
+                    var worksheet = new WorkSheet { 
+                        Name = e.Title.Text
+                    };
+
+                    worksheets.Add(worksheet);
+                    
+                    return true;
+                });
+
+                sheet.WorkSheets = worksheets;
+            }
+
+            return sheet;
         }
+
+
 
 
         public void Test() {

@@ -41,8 +41,13 @@ namespace ConsoleApplication1
 
             var sheetsManager = new SheetsManager("SheetsDb-Test", new GoogleAuthentication(username, password));
 
+            var db = sheetsManager.GetDatabase(loadWorksheets: true);
 
-            sheetsManager.Test();
+            foreach (var worksheet in db.WorkSheets) {
+                Console.WriteLine("Worksheet: {0}",worksheet.Name);
+            }
+
+     
         }
     }
 }
